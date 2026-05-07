@@ -5,21 +5,21 @@
 class Canvacli < Formula
   desc "Agent-first CLI for the Canva Connect API"
   homepage "https://github.com/catalinlongevai/canvacli"
-  version "1.1.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/catalinlongevai/canvacli/releases/download/v1.1.0/canvacli_1.1.0_darwin_amd64.tar.gz"
-      sha256 "6208f59d401ed51dacd1a316e4c52468ea696c1fe7c4422b256b75df7031f618"
+      url "https://github.com/catalinlongevai/canvacli/releases/download/v2.0.0/canvacli_2.0.0_darwin_amd64.tar.gz"
+      sha256 "6268abbdf0fe645c2505d65ab6117e1abc82f9dd63d1bd45086c95ff9873714e"
 
       define_method(:install) do
         bin.install "canva"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/catalinlongevai/canvacli/releases/download/v1.1.0/canvacli_1.1.0_darwin_arm64.tar.gz"
-      sha256 "0db0b8f7738d21ba33532fc0544fefb0aba481989d8665db7ed18f1f55ca217f"
+      url "https://github.com/catalinlongevai/canvacli/releases/download/v2.0.0/canvacli_2.0.0_darwin_arm64.tar.gz"
+      sha256 "6c56347f5ac012390945a1c9e349d1e5f049d7a585f4c5155781f7bc0a2e45fa"
 
       define_method(:install) do
         bin.install "canva"
@@ -29,15 +29,15 @@ class Canvacli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catalinlongevai/canvacli/releases/download/v1.1.0/canvacli_1.1.0_linux_amd64.tar.gz"
-      sha256 "c9278adc9ad81e97014b1443c06d6c2c56a56b20612548d078231e435f9d3b25"
+      url "https://github.com/catalinlongevai/canvacli/releases/download/v2.0.0/canvacli_2.0.0_linux_amd64.tar.gz"
+      sha256 "525f7f925f90e8f15d9403e5e4270ce3832214714991582b601b12cb55073112"
       define_method(:install) do
         bin.install "canva"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/catalinlongevai/canvacli/releases/download/v1.1.0/canvacli_1.1.0_linux_arm64.tar.gz"
-      sha256 "b1bcebeb9bc577c22d33d07472c50a1089a258408972df996ba3fda07cb5c0b1"
+      url "https://github.com/catalinlongevai/canvacli/releases/download/v2.0.0/canvacli_2.0.0_linux_arm64.tar.gz"
+      sha256 "af0594002741d62609729bc6528346e385d7b20c54bbefb153fb3fa877150209"
       define_method(:install) do
         bin.install "canva"
       end
