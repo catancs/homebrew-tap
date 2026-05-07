@@ -1,25 +1,25 @@
 class Spendwall < Formula
   desc "Local-first agent spend firewall"
   homepage "https://github.com/catancs/spendwall"
-  version "0.0.8"
+  version "0.0.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/catancs/spendwall/releases/download/v0.0.8/spendwall-aarch64-apple-darwin.tar.xz"
-      sha256 "093ec7ce269381dce5614f41e854a46d4e3d64b5afc9aba80786b30ca12dbf0e"
+      url "https://github.com/catancs/spendwall/releases/download/v0.0.9/spendwall-aarch64-apple-darwin.tar.xz"
+      sha256 "242e10cb1104cfd36eeb4602c2310f550ef9e42a441b6538f3c1685b9a80d652"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/catancs/spendwall/releases/download/v0.0.8/spendwall-x86_64-apple-darwin.tar.xz"
-      sha256 "0daf53681c29ffb2ece4761f46791371f38060701cce36fd2f45191f6fb81c98"
+      url "https://github.com/catancs/spendwall/releases/download/v0.0.9/spendwall-x86_64-apple-darwin.tar.xz"
+      sha256 "460ceb2f447cc8c0c35d4a26b2a00f4f8a6c26bfe5708589d170906e292259a5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/catancs/spendwall/releases/download/v0.0.8/spendwall-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "378215f8c0b842d5b69dfb4c2547f31780b2351254e624d6f21fb81866c76560"
+      url "https://github.com/catancs/spendwall/releases/download/v0.0.9/spendwall-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d321125c3fa0a155db14cabe3bc3b913e548227a274cbc1da883cae138e349c9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/catancs/spendwall/releases/download/v0.0.8/spendwall-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "80a61f4164352cc3dcf6e2adbc9008d6ca22e0aa45645520f1ddaafc6e1274ce"
+      url "https://github.com/catancs/spendwall/releases/download/v0.0.9/spendwall-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d4d0d6c6be640b10244ff75c2ec3a7e98799f1d4750d50176a818bd0b73fd340"
     end
   end
   license "Apache-2.0"
